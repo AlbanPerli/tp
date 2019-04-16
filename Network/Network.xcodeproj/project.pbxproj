@@ -16,6 +16,7 @@
 		6153309E225CD5570031D561 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61533091225CCB130031D561 /* Alamofire.framework */; };
 		6153309F225CD5570031D561 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61533091225CCB130031D561 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		615330A4225CDBA90031D561 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615330A3225CDBA90031D561 /* User.swift */; };
+		619EA8AC2265C59800A6FF1C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EA8AB2265C59800A6FF1C /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		6153307C225CC9BC0031D561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61533085225CCB130031D561 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master 3/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		615330A3225CDBA90031D561 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		619EA8AB2265C59800A6FF1C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				6153306E225CC9BC0031D561 /* LaunchScreen.storyboard */,
 				61533071225CC9BC0031D561 /* Info.plist */,
 				615330A3225CDBA90031D561 /* User.swift */,
+				619EA8AB2265C59800A6FF1C /* DetailsViewController.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				61533068225CC9BC0031D561 /* ViewController.swift in Sources */,
 				61533066225CC9BC0031D561 /* AppDelegate.swift in Sources */,
 				615330A4225CDBA90031D561 /* User.swift in Sources */,
+				619EA8AC2265C59800A6FF1C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

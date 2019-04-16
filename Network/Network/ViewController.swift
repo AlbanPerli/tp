@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var models = [User]()
+    var selectedIndex:Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,11 +52,25 @@ class ViewController: UIViewController {
         print("After request")
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? DetailsViewController,
+            let index = selectedIndex {
+            
+            dest.model = models[index]
+            
+        }
+    }
+    
 
 }
 
 extension ViewController:UITableViewDelegate {
-    
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        self.performSegue(withIdentifier: "toDetails", sender: self)
+    }
+
 }
 
 extension ViewController:UITableViewDataSource {
